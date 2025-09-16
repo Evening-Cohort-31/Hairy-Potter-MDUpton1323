@@ -1,36 +1,16 @@
+// Define a variable with the value of the primary key for each piece of pottery, should have an initial value of 1
 let potteryId = 1;
-
+// Define and export a function name makePottery, and have it accept parameters shape, weight, height
 export const makePottery = (shape, weight, height) => {
-  const pottery = {
-    id: 1,
-    shape: "Mug",
-    weight: 2,
-    height: 5,
-  },
-  {
-    id: 2,
-    shape: "Vase",
-    weight: 5,
-    height: 12
-  },
-  {
-    id: 3,
-    shape: "Platter",
-    weight: 10,
-    height: 1
-  },
-  {
-    id: 4,
-    shape: "Plate",
-    weight: 3,
-    height: 1
-  },
-  {
-    id: 5,
-    shape: "Bowl",
-    weight: 4,
-    height: 4
+  // Create a variable newPottery, that returns an object with the following properties id, shape, weight, and height
+  const newPottery = {
+    id: potteryId,
+    shape: shape,
+    weight: weight,
+    height: height,
   };
+  // Increment the id value each time the function is invoked
   potteryId++;
+
   return newPottery;
 };

@@ -19,5 +19,3 @@ export const potteryList = () => {
 
   return potteryHTML;
 };
-
-// Question1, from the code provided for potteryList I was able to take the code and add in string interpolation to declare the pottery id with pottery.id
